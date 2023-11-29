@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root {
+  --p-black: #000;
+  --s-black: #2d2d2f;
+  --p-white: #f1f4ef;
+  --p-gray: #e2e2e2;
+  --lemon-green: #99EEBB;
+}
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page { 
+  background-color: var(--p-black);
+
+  color: var(--p-white);
+  font-family: 'Work sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/* Banner */
+
+.banner {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.banner__title { 
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.banner__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner__acessibilities {
+  position: relative;
+}
+
+.banner__accessibilities-toggle {
+  display: none;
+}
+
+.banner__menu-label,
+.banner__acessibilities-label {
+    padding: 5px ;
+    margin: 0 20px;
+
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)100%);
+    backdrop-filter: blur(5px); /* Altere o valor conforme desejado */
+    -webkit-backdrop-filter: blur(5px);
+
+    border-radius: 5px;
+
+    font-family: 'Work sans', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.banner__acessibilities-dropdown {
+    visibility: hidden;
+    position: absolute;
+    margin: 0px auto;
+    max-height: 0;
+    width: 150px;
+    padding: 10px;
+    overflow: hidden;    
+    box-shadow: 3px 3px 3px rgb(199, 199, 199, 80);   
+  
+    border: 2px solid   var(--s-black);
+    border-radius: 5px;
+    background-color: var(--p-black) ;
+  
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+.banner__accessibilities-toggle:checked + .banner__acessibilities-label + .banner__acessibilities-dropdown {
+    visibility: visible;
+    max-height: 400px;
+}
+
+.banner__menu {
+  position: relative; 
+}
+
+.banner__menu-toggle {
+  display: none; 
+}
+
+
+.banner__menu-dropdown {
+    visibility: hidden;
+    position: absolute;
+    margin: 0px auto;
+    max-height: 0;
+    width: 150px;
+    padding: 10px;
+    overflow: hidden;    
+    box-shadow: 3px 3px 3px rgb(199, 199, 199, 80);   
+  
+    border: 2px solid   var(--s-black);
+    border-radius: 5px;
+    background-color: var(--p-black) ;
+  
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.banner__menu-toggle:checked + .banner__menu-label + .banner__menu-dropdown {
+    visibility: visible;
+    max-height: 400px; 
+}
+
+.banner__menu-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.banner__btn {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 3px rgb(199, 199, 199, 80);        
+  
+  border: 2px solid var(--s-black);
+  border-radius: 5px;
+  background-color: var(--p-black) ;
+
+  color: var(--p-gray);
+  font-weight: bold;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.banner__btn:focus, .banner__btn:hover {
+  color: var(--p-white);
+  scale: 1.1;
+}
+
+.banner__menu-link { 
+  color: var(--p-white);
+  text-decoration: none;
+
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+}
+
+.banner__menu-link {
+  color: var(--p-gray);
+  margin: 0 auto;
+}
+
+.content { 
+    width: 80vw;
+    margin: 0 auto;
+    padding: 30px;
+ }
+
+ .content__header {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content:end;
+    text-align: center;
+
+ }
+    .content__box-img{
+        height: 600px;
+        width: 600px;
+        max-width: 80vw;
+
+    background-image: linear-gradient(0deg,#181818 0,hsla(0,0%,9%,.7) 20%,hsla(0,0%,9%,.4) 30%,transparent 50%);
+
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)100%),  url('../img/yvonne-mobile.png');
+
+    height:400px;
+    background-size: cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.content__header p { font-size: 1rem;}
+
+.content__introduction,
+.content__development,
+.content__conclusion,
+.content__bibliography,
+.content__accessibility { margin-top: 60px;}
+
+.content__introduction p,
+.content__development p,
+.content__conclusion p,
+.content__bibliography p,
+.content__accessibility p { 
+    margin-bottom: 20px;
+    text-indent: 30px;
+}
+
+.content__title { 
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+}
+.content__subtitle { margin: 40px 0 20px}
+
+.social-media { 
+    width: 80vw;
+    margin: 0 auto;
+
+ }
+
+
+@media (max-width: 800px) {
+    .banner,
+    .content,
+    .social-media {
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .banner__navigation {
+        justify-content: center; /* Centraliza os menus em dispositivos menores */
+        flex-wrap: wrap; /* Quebra os menus para a próxima linha se o espaço for insuficiente */
+    }
+
+    .banner__acessibilities,
+    .banner__menu {
+        margin: 5px; /* Espaçamento entre os menus em dispositivos menores */
+    }
+
+}

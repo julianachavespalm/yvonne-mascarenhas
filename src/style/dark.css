@@ -1,0 +1,40 @@
+/* Juliana Chaves Palm
+20/11/2023
+Esquema de cores
+de alto contraste
+para ativação do js .high-contrast-theme */
+.high-contrast-theme {
+    --background-color: #000;
+    --text-color: #fff; 
+    --link-color--active: #ffc107;
+        --link-hover--color: #ffc107;
+        --border-color: #ffc107; 
+}
+
+
+
+
+.high-contrast-theme * {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.high-contrast-theme body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.high-contrast-theme a {
+    color: var(--link-color--active);
+    text-decoration: none;
+}
+
+.high-contrast-theme a:visited {
+    color: var(--link-color--active);
+}
+
+.high-contrast-theme a:hover,
+.high-contrast-theme a:focus {
+    border-bottom: 2px solid var(--link-hover--color);
+    color: var(--link-hover--color);
+}
