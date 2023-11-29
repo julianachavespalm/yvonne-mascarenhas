@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página em homenagem à Dra. Yvonne Mascarenhas">
     <title>Dra. Yvonne Mascarenhas, por Juliana Chaves Palm</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="src/style/main.css">
     <link rel="stylesheet" href="src/style/dark.css">
 </head>
@@ -38,72 +40,80 @@
             <nav class="banner__acessibilities">
                 <input type="checkbox" id="accessibilities-toggle" class="banner__accessibilities-toggle">
                 <label for="accessibilities-toggle" class="banner__acessibilities-label" id="open-acessibilities" aria-label="Menu de acessibilidade" title="Menu de acessibilidade" accesskey="3">
-                    <i class="fa-regular fa-eye" aria-disabled="true"></i>
+                    <span class="material-symbols-rounded" aria-disabled="true">
+                        settings_accessibility
+                        </span>
                     Acessibilidade
                 </label>
                 <ul class="banner__acessibilities-dropdown">
                     <li class="banner__acessibilities-item">
                         <button class="banner__btn" id="increaseFont" title="Aumentar fonte" aria-label="Aumentar fonte">
-                            <span aria-disabled="true">A+</span>
-                        </button>
+                            <span class="material-symbols-rounded">
+                                text_increase
+                                </span>
+                            </button>
                     </li>
                     <li class="banner__acessibilities-item">
                         <button class="banner__btn" id="decreaseFont" title="Diminuir fonte" aria-label="Diminuir fonte">
-                            <span aria-disabled="true">A+</span>
+                            <span class="material-symbols-rounded">
+                                text_decrease
+                                </span>
                         </button>
                     </li>
                     <li class="banner__acessibilities-item">
                         <button class="banner__btn" id="reset" title="Desfazer alterações" aria-label="Desfazer alterações">
-                            <i class="fa-solid fa-rotate-left"></i>
+                            <span class="material-symbols-outlined" aria-disabled="true">restart_alt</span>
                         </button>
                     </li>
                     <li class="banner__acessibilities-item">
-                        <button class="banner__btn"  id="highContrastToggle" aria-label="Alto contraste" title="Alto contraste">
-                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        <button class="banner__btn" id="highContrastToggle" aria-label="Alto contraste" title="Alto contraste">
+                            <span class="material-symbols-outlined" aria-disabled="true">contrast</span>
                         </button>
                     </li>
                     <li  class="banner__acessibilities-item">
-                        <a href="#accessibility" class="banner__menu-link">Acessibilidade do site</a>
+                        <a href="#accessibility" class="banner__link">Acessibilidade do site</a>
                     </li>
                 </ul> 
             </nav>
             <nav class="banner__menu">
                 <input type="checkbox" id="menu-toggle" class="banner__menu-toggle">
                 <label for="menu-toggle" class="banner__menu-label" aria-label="Menu principal" title="Menu principal" id="open-menu" accesskey="2">
-                    <i class="fa-solid fa-bars" aria-disabled="true"></i>
+                    <span class="material-symbols-rounded" aria-disabled="true">
+                        more_vert
+                        </span>
                     Menu
                 </label>
                 <ul class="banner__menu-dropdown">
                     <li class="banner__menu-item">
-                        <a href="#introduction" class="banner__menu-link">Introdução</a>
+                        <a href="#introduction" class="banner__link">Introdução</a>
                     </li>
                     <li class="banner__menu-item">
-                        <a href="#development" class="banner__menu-link">Breve biografia</a>
+                        <a href="#development" class="banner__link">Breve biografia</a>
                     </li>
                     <li class="banner__menu-item">
-                        <a href="#conclusion" class="banner__menu-link">Conclusão</a></li>
+                        <a href="#conclusion" class="banner__link">Conclusão</a></li>
                     <li class="banner__menu-item">
-                        <a href="#bibliography" class="banner__menu-link">Referências</a></li>
+                        <a href="#bibliography" class="banner__link">Referências</a></li>
                     
                     <li class="banner__menu-item">
-                        <a href="https://julianachavespalm.github.io/boas-praticas-womakerscode/" class="banner__menu-link">Quem sou eu</a>
+                        <a href="https://julianachavespalm.github.io/boas-praticas-womakerscode/" class="banner__link">Quem sou eu</a>
                     </li>
-
                 </ul> 
             </nav>
         </section>
+        
     </header>
     <main class="content" id="content">
-        <header class="content__header">
+        <section class="banner__header">  
+            <h1 class="banner__title"><abbr title="Doutora">Dra.</abbr> Yvonne Primerano Mascarenhas: a Senhora dos Cristais</h1>          
             
-            <h2 class="content __title">Dra. Yvonne Primerano Mascarenhas: Senhora dos Cristais</h2>
-            <div class="content__box-img">
-                <p>Juliana Chaves Palm</p>
+            <div class="banner__text">
+                <p><a href="https://julianachavespalm.github.io/boas-praticas-womakerscode/" class="banner__link">Juliana Chaves Palm</a></p>
                 <p>20 <abbr title="Novembro">nov.</abbr> 2023</p>
             </div>
-        </header>
+        </section>
         <section class="content__introduction" id="introduction">
-            <h3 class="content__subtitle">Introdução</h3>
+            <h2 class="content__subtitle">Introdução</h2>
             <p>Dra. Yvonne Primerano Mascarenhas, conhecida como "Senhora dos Cristais" na comunidade científica, foi uma figura marcante no cenário científico brasileiro. Nascida em 21 de julho de 1931, em Pederneiras, São Paulo, sua trajetória é um testemunho de dedicação à ciência, educação e disseminação do conhecimento.</p>
             <p>Ela desafiou as convenções sociais, tanto por ser uma pesquisadora de relevância fora do eixo europeu, quanto por ser uma cientista mulher. Sua trajetória continua a inspirar meninas e mulheres a ingressarem na carreira acadêmica, destacando sua relevância como um modelo de sucesso em um mundo historicamente dominado pelo gênero masculino.</p>
             <p>Esta homenagem destaca não apenas suas notáveis contribuições na cristalografia estrutural por difração de raios-x, que lhe rendeu diversos prêmios nacionais e internacionais por contribuições científicas, mas também seu papel pioneiro como mulher nas ciências exatas, desafiando os padrões da época e inspirando gerações futuras.</p>
@@ -114,53 +124,151 @@
                 <li><a href="#foo">Ir para o rodapé 4</a></li>
             </ul>
         </section>
-        <section class="content__development" id="development">
-            <h3 class="content__subtitle">Cristalografia</h3>
+        <section class="content__development" id="development">   
+            <h2 class="content__subtitle">Cristalografia</h2>
             <p>Mascarenhas é considerada a mãe da cristalografia no Brasil, por seus estudos pioneiros na área. Além disso, ela é entusiasta da ciência e divulgação científica e famosa por sua dedicação ao fomento de ações para treinamento de meninas e mulheres na ciência.</p>
+            <div class="content__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IWXE7o3AZaM?si=UhhPFoD-xQ3aNPNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="content__youtube"></iframe>
+                <p>A USP E AS MULHERES: Yvonne Primerano Mascarenhas (2021)</p>
+            </div>
             <p>Mas afinal, o que exatamente é cristalografia? Para quem não está familiarizado com essa área, é comum associá-la a cristais como diamante, grafite ou quartzo. No entanto, o que a cristalografia estuda em sua essência?</p>
             <p>Segundo Mascarenhas (2020), a cristalografia, é um estudo multidisciplinar da ciência, que estuda as propriedades do cristal com base em medidas físicas de sua geometria e simetria pontual e, teoricamente, da distribuição da matéria na célula unitária de acordo com seu grupo espacial.</p>
             <p>No caso de Mascarenhas, que é especializada em determinação de estrutura cristalina e molecular por difração e espalhamento de raios-x, o cristal muitas vezes analisado é o NaCl (sal de cozinha), como na "Análise da Difração dos Raios X" (NAPOLITANO, H. B.; CAMARGO, A. J.; MASCARENHAS, Y. P.; VENCATO, I.; LARIUCCI, C., 2007).</p>
-            <h3 class="content__subtitle">Formação Acadêmica e Contribuições Científicas</h3>
+            <div class="content__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-9UUdHqGZg8?si=zv64uc7AxnimnwUF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="content__youtube"></iframe>
+                <p>A CIÊNCIA QUE EU FAÇO: Yvonne Primerano Mascarenhas (2011)</p>
+            </div>
+            <h2 class="content__subtitle">Formação Acadêmica e Contribuições Científicas</h2>
             <p>Dra. Yvonne graduou-se em Química e Física pela Universidade do Brasil (atual Universidade Federal do Rio de Janeiro) e obteve seu doutorado em Química (Físico-Química) pela Universidade de São Paulo (USP). Seus estudos pioneiros na determinação de estruturas cristalinas por difração de raios-X culminaram na fundação da Sociedade Brasileira de Cristalografia em 1971, atualmente conhecida como Associação Brasileira de Cristalografia (ABCr).</p>
             <p>Como professora titular no Instituto de Física de São Carlos da USP, suas pesquisas inovadoras na Física da Matéria Condensada, utilizando métodos computacionais, impulsionaram avanços significativos em sua área.</p>
-            <h3 class="content__subtitle">Contribuições para a Educação e Difusão Científica</h3>
+            <h2 class="content__subtitle">Contribuições para a Educação e Difusão Científica</h2>
             <p>Além de sua carreira acadêmica, Dra. Yvonne Mascarenhas dedicou-se à difusão do conhecimento científico. Seu envolvimento com projetos educacionais em escolas públicas, via Instituto de Estudos Avançados da USP em São Carlos, reflete seu comprometimento em despertar o interesse pela ciência entre os jovens. O uso inovador do Portal Ciência Web e do Grupo de Trabalho do IEA foi crucial para essa missão.</p>
-            <h3 class="content__subtitle">Prêmios e Títulos</h3>
-            <p>Ao longo de sua carreira produtiva nas ciências, Dra. Yvonne Mascarenhas recebeu inúmeros prêmios e títulos significativos, que podemos enumerar</p>
-            <ul class="content__awards-list">
-                <li class="content__award">Prêmio Costa Ribeiro, Sociedade Brasileira de Física/ Física da Matéria Condensada (2021);</li>
-                <li class="content__award">Homenagem 50 Anos da Associação Brasileira de Cristalografia, Associação Brasileira de Cristalografia (2021);</li>
-                <li class="content__award">Prêmio RHEINBOLDT- HAUPTMANN, Instituto de Química da Universidade de São Paulo (2019);</li>
-                <li class="content__award">Homenagem: relevantes e pioneiras contribuições à implementação e consolidação do Ensino de Física e formação de professores de Física no Brasil., XXII SNEF (2017);</li>
-                <li class="content__award">Prêmio Distinguished Woman in Chemistry/Chemical Engineering, International Union of Pure and Applied Chemistry (2017);</li>
-                <li class="content__award">Incluída no livro Mulheres na Física Casos Históricos, Panorama e Perspectivas com o resumo biográfico: Yvonne Mascarenhas: Cientista, mestre e pioneira, Editora livraria da Física (2015);</li>
-                <li class="content__award">Pioneiras da Ciência no Brasil, CNPq (2014);</li>
-                <li class="content__award">Inauguração da Sala de Leitura Professora Yvonne Mascarenhas, Escola Estadual Professor Arlindo Bittencourt (2014);</li>
-                <li class="content__award">Professora Emérita do CNPq, CNPq (2013);</li>
-                <li class="content__award">Pesquisadora Emérita do CNPq, CNPq (2013);</li>
-                <li class="content__award">Membro Emérito, Seção de Ciências Físicas, Academia Paraense de Ciências (2012);</li>
-                <li class="content__award">Huésped de Honor de la Universidad Nacional del Litoral, Universidad Nacional de Litoral, Santa Fé, Argentina;</li>
-                <li class="content__award">Menção Honrosa Prêmio XXIII José Reis de Divulgação Cientifica e Tecnológica, categoria Veículo de Comunicação, ao Instituto de Estudos avançados da (USP/ São Carlos)., CNPq (2012);</li>
-                <li class="content__award">Professora Honorária, USP/IEA (2007);</li>
-                <li class="content__award">Intitulada Professora Hemérita pela Congregação do Instituto de Física de São Carlos, IFSC (2006);</li>
-                <li class="content__award">Denominação do prédio do Núcleo Operacional do S. Carlos Science Park de Solar da Inovação Sérgio e Yvonne Mascarenhas, Parq Tec (2006);</li>
-                <li class="content__award">Homenagem durante sessão solene do Ano Mundial da Física, Câmara dos Deputados (2005);</li>
-                <li class="content__award">Indicada para integrar o Conselho Consultivo do Projeto Universidade Aberta à Terceira Idade, USP - Universidade de São Paulo (2002);</li>
-                <li class="content__award">Simpósio e Comemorações em Homenagem ao Septuagésimo, Diretoria e o Grupo de Cristalografia do Instituto de Física de São Carlos/USP (2001);</li>
-                <li class="content__award">Homenageada pela Congregação do Instituto de Química de São Carlos, Instituto de Química de São Carlos/USP (2001);</li>
-                <li class="content__award">Melhor painel apresentado na Seção de Catálise com o trabalho CT 002 - Análise Estrutural de Zeólitas y Contendo Terras Raras (Ernay, Honay, Tmnay e Tbnay) por refinamento de Rietveld, Sociedade Brasileira de Química (2001);</li>
-                <li class="content__award">Membro Titular da Academia Brasileira de Ciências, Academia Brasileira de Ciências (2000);</li>
-                <li class="content__award">Eleita Mulher do Ano pela União Cívica Feminina de São Carlos, União Cívica Feminina de São Carlos - Câmara Municipal de São Carlos (1999);</li>
-                <li class="content__award">Homenageada pela Sociedade Brasileira de Química (SBQ) com a outorga da Medalha Simão Mathias, pela sua contribuição ao desenvolvimento da Química, Auditório Cassino do Grande Hotel de Poços de Caldas, no âmbito da 21a. Reunião Anual da SBQ (1998);</li>
-                <li class="content__award">Admitida na Ordem Nacional do Mérito Científico, ONMC/MCT na Classe da Grã-Cruz, pelo Presidente da República, Fernando Henrique Cardoso, através de telegrama TLG/MCT no.140/98, de 19/10/98 do Dr. José Israel Vargas Ministro da Ciência e Tecnologia e Cha, Palácio do Planalto em sessão solene presidida pelo Senhor Presidente da República Fernando Henrique (1998);</li>
-                <li class="content__award">Homenageada pela Câmara Municipal de São Carlos pela dedicação ao ensino, pesquisa e difusão de conhecimentos no país e, em reconhecimento aos 40 anos de serviços à cidade com a criação de instituições pioneiras junto a USP, Universidade Federal de São Carlos e Embrapa (1997);</li>
-                <li class="content__award">Melhor poster Macromolecular Computer Modelling as a Tool in Structural Studies of Target Proteins in Rational Drug Design and Genetic Engennering, Outorgado no Primeiro Congresso Latinoamericano de Biotecnologia (1991).</li>
+            <h2 class="content__subtitle">Prêmios e Títulos</h2>
+            <p>Ao longo de sua carreira produtiva nas ciências, Dra. Yvonne Mascarenhas recebeu inúmeros prêmios e títulos significativos, como ser a primera diretora do Instituto de Física de São Carlos (IFSC) da USP (1994 a 1998), a primeira mulher a receber o prêmio Joaquim da Costa Ribeiro da Sociedade Brasileira de Física (SBF), a primeira mulher a ocupar uma cadeira na Escola de Engenharia de São Carlos (EESC) da USP.
+            <div class="content__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EgrpAyIeAvY?si=GcX7ksd5zUlX4MCy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="content__youtube"></iframe>
+                <p>Vídeo de agradecimento da Dra. Yvonne Primerano Mascarenhas, em agradecimento ao prêmio Prêmio Joaquim da Costa Ribeiro 2021</p>
+            </div>
+                <h3 class="content__subtitle">Prêmios e títulos conquistados ao longo da carreira</h3>
+            <ul class="content__awards">
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2021</h4></div>
+                    <div class="content__award-text">
+                        <p>Prêmio Costa Ribeiro, Sociedade Brasileira de Física/ Física da Matéria Condensada.</p>
+                        <p>Homenagem 50 Anos da Associação Brasileira de Cristalografia, Associação Brasileira de Cristalografia.</p>
+                    </div> 
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2019</h4></div>
+                    <div class="content__award-text">
+                        <p>Prêmio RHEINBOLDT- HAUPTMANN, Instituto de Química da Universidade de São Paulo.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2017</h4></div>
+                    <div class="content__award-text">
+                        <p>Homenagem: relevantes e pioneiras contribuições à implementação e consolidação do Ensino de Física e formação de professores de Física no Brasil., XXII SNEF.</p>
+                        <p>Prêmio Distinguished Woman in Chemistry/Chemical Engineering, International Union of Pure and Applied Chemistry.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2015</h4></div>
+                    <div class="content__award-text">
+                        <p>Incluída no livro Mulheres na Física Casos Históricos, Panorama e Perspectivas com o resumo biográfico: Yvonne Mascarenhas: Cientista, mestre e pioneira, Editora livraria da Física.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2014</h4></div>
+                    <div class="content__award-text">
+                        <p>Pioneiras da Ciência no Brasil, CNPq.</p>
+                        <p>Inauguração da Sala de Leitura Professora Yvonne Mascarenhas, Escola Estadual Professor Arlindo Bittencourt.</p>   
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2013</h4></div>
+                    <div class="content__award-text">
+                        <p>Professora Emérita do CNPq, CNPq.</p>
+                        <p>Pesquisadora Emérita do CNPq, CNPq.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                     <div class="content__award-year"><h4>2012</h4></div>
+                    <div class="content__award-text">
+                        <p>Membro Emérito, Seção de Ciências Físicas, Academia Paraense de Ciências.</p>
+                        <p>Huésped de Honor de la Universidad Nacional del Litoral, Universidad Nacional de Litoral, Santa Fé, Argentina.</p>
+                        <p>Menção Honrosa Prêmio XXIII José Reis de Divulgação Cientifica e Tecnológica, categoria Veículo de Comunicação, ao Instituto de Estudos avançados da (USP/ São Carlos)., CNPq.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div  class="content__award-year">2017</h4></div>
+                    <div class="content__award-text">
+                        <p>Professora Honorária, USP/IEA.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2006</h4></div>
+                    <div class="content__award-text">
+                        <p>Intitulada Professora Hemérita pela Congregação do Instituto de Física de São Carlos, IFSC.</p>
+                        <p>Denominação do prédio do Núcleo Operacional do S. Carlos Science Park de Solar da Inovação Sérgio e Yvonne Mascarenhas, Parq Tec.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2005</h4></div>
+                    <div class="content__award-text">
+                        <p>Homenagem durante sessão solene do Ano Mundial da Física, Câmara dos Deputados.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2002</div></h4></div>
+                    <div class="content__award-text">
+                        <p>Indicada para integrar o Conselho Consultivo do Projeto Universidade Aberta à Terceira Idade, USP - Universidade de São Paulo.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2001</h4></div>
+                    <div class="content__award-text">
+                        <p>Simpósio e Comemorações em Homenagem ao Septuagésimo, Diretoria e o Grupo de Cristalografia do Instituto de Física de São Carlos/USP.</p>
+                        <p>Homenageada pela Congregação do Instituto de Química de São Carlos, Instituto de Química de São Carlos/USP.</p>
+                        <p>Melhor painel apresentado na Seção de Catálise com o trabalho CT 002 - Análise Estrutural de Zeólitas y Contendo Terras Raras (Ernay, Honay, Tmnay e Tbnay) por refinamento de Rietveld, Sociedade Brasileira de Química.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>2000</h4></div>
+                    <div class="content__award-text">
+                        <p>Membro Titular da Academia Brasileira de Ciências, Academia Brasileira de Ciências.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>1999</h4></div>
+                    <div class="content__award-text">
+                        <p>Eleita Mulher do Ano pela União Cívica Feminina de São Carlos, União Cívica Feminina de São Carlos - Câmara Municipal de São Carlos.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>1998</h4></div>
+                    <div class="content__award-text">
+                        <p>Homenageada pela Sociedade Brasileira de Química (SBQ) com a outorga da Medalha Simão Mathias, pela sua contribuição ao desenvolvimento da Química, Auditório Cassino do Grande Hotel de Poços de Caldas, no âmbito da 21a. Reunião Anual da SBQ.</p>
+                        <p>Admitida na Ordem Nacional do Mérito Científico, ONMC/MCT na Classe da Grã-Cruz, pelo Presidente da República, Fernando Henrique Cardoso, através de telegrama TLG/MCT no.140/98, de 19/10/98 do Dr. José Israel Vargas Ministro da Ciência e Tecnologia e Cha, Palácio do Planalto em sessão solene presidida pelo Senhor Presidente da República Fernando Henrique.</p>
+                    </div>
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>1997</h4></div>
+                    <div class="content__award-text">
+                        <p>Homenageada pela Câmara Municipal de São Carlos pela dedicação ao ensino, pesquisa e difusão de conhecimentos no país e, em reconhecimento aos 40 anos de serviços à cidade com a criação de instituições pioneiras junto a USP, Universidade Federal de São Carlos e Embrapa</p>
+                    </div>           
+                </li>
+                <li class="content__award">
+                    <div class="content__award-year"><h4>1991</h4></div>
+                    <div class="content__award-text">
+                        <p>Melhor poster Macromolecular Computer Modelling as a Tool in Structural Studies of Target Proteins in Rational Drug Design and Genetic Engennering, Outorgado no Primeiro Congresso Latinoamericano de Biotecnologia (1991).</p>
+                    </div>
+                </li>
             </ul>
         </section>
-        <section class="content__conclusion" id="conclusion">
-            <h3 class="content__subtitle" >Conclusão</h3>
-            <p>Ao longo de sua carreira produtiva nas ciências, a Dra. Yvonne Mascarenhas acumulou inúmeros prêmios e honrarias, demonstrando não apenas sua excelência no campo da cristalografia, mas também seu comprometimento com o avanço da ciência no Brasil. Seu legado vai além das descobertas e pesquisas, permeando a divulgação científica e a formação de novos talentos, especialmente entre mulheres na ciência.</p>
-            <p>A trajetória da Dra. Mascarenhas é um testemunho inspirador do poder da dedicação e paixão pela ciência, destacando a importância da inclusão e do reconhecimento do papel das mulheres no cenário científico. Sua contribuição não só expandiu os horizontes da cristalografia, mas também abriu portas para futuras gerações de cientistas no Brasil</p>
+        <section class="content____conclusion" id="conclusion">
+            <h2 class="content__subtitle" >Conclusão</h2>
+            <p>Ao longo de sua carreira, a Dra. Yvonne Mascarenhas acumulou inúmeros prêmios e honrarias, demonstrando não apenas sua excelência no campo da cristalografia, mas também seu comprometimento com o avanço da ciência no Brasil. Seu legado vai além das descobertas e pesquisas, permeando a divulgação científica e a formação de novos talentos, especialmente entre mulheres na ciência.</p>
+            <p>A trajetória da Dra. Mascarenhas é um testemunho inspirador do poder da dedicação e paixão pela ciência, destacando a importância da inclusão e do reconhecimento do papel das mulheres no cenário científico. Sua contribuição não só expandiu os horizontes da cristalografia, mas também abriu portas para futuras gerações de cientistas no Brasil.</p>
             <ul class="content__shortcuts sr-only" id="shortcuts">
                 <li><a href="#top">Ir para o topo do site</a></li>
                 <li><a href="#open-menu">Ir para o menu principal 2</a></li>
@@ -169,9 +277,10 @@
             </ul>
         </section>
         <section class="content__bibliography" id="bibliography">
-            <h2 class="content__title">Referências</h2>
-            <p>ACADEMIA BRASILEIRA DE CIÊNCIAS (ABC). <strong>Perfil de Yvonne Primerano Mascarenhas.</strong> Disponível em: <a href="https://www.abc.org.br/membro/yvonne-primerano-mascarenhas/" class="content__link">https://www.abc.org.br/membro/yvonne-primerano-mascarenhas/</a>. Acesso em: 20 nov. 2023</p>
-            <p>MARQUES, F.  Yvonne Primerano Mascarenhas: Pensar nunca fez mal a nenhuma sociedade. <strong>Revista Pesquisa FAPESP</strong>, ed. 322, p. 38-41, dez. 2022. </st> </p>
+            <h2 class="content__subtitle">Referências</h2>
+            <p>ACADEMIA BRASILEIRA DE CIÊNCIAS (ABC). <strong>Perfil de Yvonne Primerano Mascarenhas.</strong> Disponível em: <a href="https://www.abc.org.br/membro/yvonne-primerano-mascarenhas/" class="content__link">https://www.abc.org.br/membro/yvonne-primerano-mascarenhas/</a>. Acesso em: 20 nov. 2023.</p>
+            <p>MARQUES, F.  Yvonne Primerano Mascarenhas: Pensar nunca fez mal a nenhuma sociedade. <strong>Revista Pesquisa FAPESP</strong>, ed. 322, p. 38-41, dez. 2022.
+            </p>
             <p>NAPOLITANO, H. B.; CAMARGO, A. J.; MASCARENHAS, Y. P.; VENCATO, I.; LARIUCCI, C. Análise da difração dos Raios X. <strong>Revista Processos Químicos</strong>, v. 1, n. 1, p. 35-45, 2 jan. 2007.</p> 
             <p>MASCARENHAS, Y. P. Lattes. <strong>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</strong>. Disponível em: <a href="http://lattes.cnpq.br/2734203117778600" class="content__link">http://lattes.cnpq.br/2734203117778600</a>. Acesso em 20 nov. 2023.</p>
             <p>MASCARENHAS, Y. P. History of Physics and Related Sciences. <strong>Rev. Bras. Ensino Fís.</strong>, ed. 42, ano 2020. Disponível em: <a href="https://doi.org/10.1590/1806-9126-RBEF-2019-0336" class="content__link">https://doi.org/10.1590/1806-9126-RBEF-2019-0336</a>. Acesso em: 20 nov. 2023.</p>
@@ -184,7 +293,7 @@
             <p class="content__message sr-only">Fim do conteúdo principal.</p>
         </section>
         <section class="content__accessibility" id="accessibility">
-            <h3 class="content__subtitle">Acessibilidade</h3>
+            <h2 class="content__subtitle">Acessibilidade</h2>
             <p>Estamos comprometidos em garantir uma experiência inclusiva para todos os visitantes deste site.</p>
             <p>O site possui navegação rápida através de teclas de atalho.</p>
             <ul>
@@ -220,18 +329,17 @@
         </section>
     </main>
     <footer class="social-media" id="foo">
-        <p class="social-media__message">Estou sempre disponível para novos projetos.</p>
-    <ul class="social-media__links" >
-      <li class="social-media__item">
-        <a href="mailto:julianachavespalm@gmail.com" class="social-media__link"><i class="fa-regular fa-envelope" aria-disabled="true"></i> E-mail</a>
-    </li>
-      <li class="social-media__item">
-        <a href="https://www.linkedin.com/in/julianachavespalm" class="social-media__link"><i class="fa-brands fa-linkedin" aria-disabled="true"></i> LinkedIn</a>
-    </li>
-      <li class="social-media__item"><a href="https://www.github.com/julianachavespalm" class="social-media__link">
-        <i class="fa-brands fa-github-alt" aria-disabled="true"></i> Github</a></li>
-    </ul>
-    <p class="social-media__message">Feito com <span class="social-media__icon--red" aria-label="coração" title="coração">♥</span> por Juliana Chaves Palm, <span lang="en"><abbr title="Quality Assurance">QA</abbr></span>  e <span lang="en"><abbr title="Developer">Dev</abbr></span>.</p>
+        <p class="social-media__message">&copy; 2023 Juliana Chaves Palm</p>
+        <ul class="social-media__links" >
+        <li class="social-media__item">
+            <a href="mailto:julianachavespalm@gmail.com" class="social-media__link"><i class="fa-regular fa-envelope" aria-label="E-mail de Juliana Chaves Palm" title="E-mail"></i></a>
+        </li>
+        <li class="social-media__item">
+            <a href="https://www.linkedin.com/in/julianachavespalm" class="social-media__link"><i class="fa-brands fa-linkedin" aria-label="Linkedin de Juliana Chaves Palm"></i></a>
+        </li>
+            <li class="social-media__item"><a href="https://www.github.com/julianachavespalm" class="social-media__link">
+            <i class="fa-brands fa-github-alt" aria-label="Link de acesso ao Github de Juliana Chaves Palm" title="Github"></i></a></li>
+        </ul>
     <ul class="social-media__shortcuts sr-only" id="shortcuts">
         <li><a href="#top">Ir para o topo do site</a></li>
         <li><a href="#open-menu">Ir para o menu principal 2</a></li>
