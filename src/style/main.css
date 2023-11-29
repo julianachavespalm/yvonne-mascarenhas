@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 :root {
-    --p-black: #000000; /* Principal */
-    --t-black: #FFFFFF; /* Secundário */
-    --dark-blue: #2E3F6E; /* Destaque (Azul Escuro) */
-    --sky-blue: #7FA9FF; /* Destaque (Azul Claro) */
-    --smoke-white: #E5E5E5; /* Acento (Cinza Claro) */
+    --p-black: #141414;
+    --t-black: #000;
+    --dark-blue: #2E3150;
+    --sky-blue: #6EB8E1;
+    --light-blue: #C6FEFF;
+    --smoke-white: #F1F4EF;
 }
 
 * {
