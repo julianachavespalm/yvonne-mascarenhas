@@ -155,7 +155,9 @@ input#menu-toggle {
     max-height: 25rem;
 }
 
-.banner__menu-item {
+.banner__menu-item,
+.banner__acessibilities-item {
+    text-decoration: none;
     margin: 0.625rem 0;
 }
 
