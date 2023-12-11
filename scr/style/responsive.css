@@ -1,0 +1,53 @@
+@media (max-width: 540px) {
+
+    /*---------------------------
+    Globais
+    ---------------------------*/
+    .banner,
+    .content,
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: auto;
+        margin: 60px 20px;
+        padding: 0 25px;
+
+        text-align: left;
+    }   
+
+    
+
+    .content__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .content__youtube {
+        width: calc(80vw - 40px);
+    height: calc((80vw - 40px) * 0.5625);
+    }
+
+}
+
+/* Define a largura máxima das seções */
+@media screen and (min-width: 540px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header, main, footer {
+      max-width: 739px;
+      margin: 0 auto; /* Centraliza as seções */
+    }
+
+    .content__youtube {
+        width: auto;
+        height: 500px;
+    }
+  }
+  
