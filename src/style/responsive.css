@@ -1,11 +1,30 @@
 @media (max-width: 375px) {
+    /*---------------------------
+    Banner
+    ---------------------------*/
     .banner__navigation {
-      display: none;
+        display: none;
     }
+
+    /*---------------------------
+    Content e Social Media
+    ---------------------------*/
+
+    header, main, footer {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .content__youtube {
+        width: auto;
+        height: auto;
+    }
+
+    
   }
   
 
-@media (min-width: 0) and (max-width: 540px) {
+@media (min-width: 375px) and (max-width: 540px) {
 
     /*---------------------------
     Globais
