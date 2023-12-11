@@ -105,18 +105,16 @@ p {
     transform: translateY(-2px);
 }
 
-.banner__acessibilities,
+
 .banner__menu {
     position: relative;
     margin: 0 0 1.875rem;
 }
 
-.banner__accessibilities-toggle,
 .banner__menu-toggle {
     display: none;
 }
 
-.banner__acessibilities-label,
 .banner__menu-label {
     display: flex;
     flex-direction: row;
@@ -131,7 +129,6 @@ p {
     cursor: pointer;
 }
 
-.banner__acessibilities-dropdown,
 .banner__menu-dropdown {
     visibility: hidden;
     position: absolute;
@@ -150,13 +147,11 @@ p {
     z-index: 1;
 }
 
-.banner__accessibilities-toggle:checked + .banner__acessibilities-label + .banner__acessibilities-dropdown,
 .banner__menu-toggle:checked + .banner__menu-label + .banner__menu-dropdown {
     visibility: visible;
     max-height: 25rem;
 }
 
-.banner__acessibilities-item,
 .banner__menu-item {
     margin: 0.625rem 0;
 }
