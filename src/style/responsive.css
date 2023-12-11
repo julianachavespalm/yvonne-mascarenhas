@@ -25,11 +25,7 @@
         position: relative;
         margin: 0 0 1.875rem;
     }
-    
-    .banner__accessibilities-toggle {
-        display: none;
-    }
-    
+       
     .banner__acessibilities-label  {
         display: flex;
         flex-direction: row;

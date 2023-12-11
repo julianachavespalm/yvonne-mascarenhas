@@ -111,6 +111,7 @@ p {
     margin: 0 0 1.875rem;
 }
 
+.banner__accessibilities-toggle
 .banner__menu-toggle {
     display: none;
 }
