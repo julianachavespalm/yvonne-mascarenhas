@@ -8,7 +8,10 @@ para ativação do js .high-contrast-theme */
     --text-color: #fff; 
     --link-color--active: #ffc107;
         --link-hover--color: #ffc107;
-        --border-color: #ffc107; 
+        --border-color: #ffc107;
+        
+        background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 
