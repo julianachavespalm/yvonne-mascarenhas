@@ -119,6 +119,7 @@ input#menu-toggle {
 
 
 .banner__menu-label {
+    width: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -131,6 +132,8 @@ input#menu-toggle {
     font-size: 1.125rem;
     cursor: pointer;
 }
+
+.banner__acessibilities-dropdown { list-style: none; }
 
 .banner__menu-dropdown {
     visibility: hidden;
@@ -145,7 +148,8 @@ input#menu-toggle {
     border-radius: 0.3125rem;
 
     background-color: var(--p-black);
- 
+
+    list-style: none; 
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     z-index: 1;
 }
@@ -157,7 +161,6 @@ input#menu-toggle {
 
 .banner__menu-item,
 .banner__acessibilities-item {
-    text-decoration: none;
     margin: 0.625rem 0;
 }
 
