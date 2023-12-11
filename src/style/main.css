@@ -44,9 +44,9 @@ p {
 /* Header */
 
 .banner__header {
-    min-height: 70vh;
-    max-height: 10rem;
-    max-height: 10rem;
+    min-height: 37.5rem;
+    max-height: 37.5rem;
+    max-width: 37.5rem; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
