@@ -111,10 +111,12 @@ p {
     margin: 0 0 1.875rem;
 }
 
-.banner__accessibilities-toggle
-.banner__menu-toggle {
+
+input#accessibilities-toggle,
+input#menu-toggle {
     display: none;
 }
+
 
 .banner__menu-label {
     display: flex;
