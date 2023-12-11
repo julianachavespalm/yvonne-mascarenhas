@@ -123,7 +123,9 @@
       margin: 0 auto;
     }
 
-    .banner__title { padding: 1rem 8rem; }
+
+
+    .banner__title { padding: 1rem 4rem; }
 
     .content__youtube {
         width: auto;
