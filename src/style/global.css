@@ -178,6 +178,8 @@
         .banner__title {
             font-weight: 900;
             letter-spacing: 0.25rem;
+            text-shadow: var(--dark-blue) 3px 2px 0;
+
         }
 
         .banner__text .banner__link {
