@@ -64,3 +64,40 @@ const accessibilityToggle = document.getElementById('accessibilities-toggle');
       accessibilityToggle.checked = false;
     }
   });
+
+
+    
+// Função para fechar dropdown ao clicar fora
+document.addEventListener('click', function(event) {
+  const awards = document.querySelectorAll('.content__award-toggle');
+  const awardDropdowns = document.querySelectorAll('.content__award-text');
+
+  if (!event.target.closest('.content__award')) {
+    awards.forEach(award => (award.checked = false));
+    awardDropdowns.forEach(dropdown => (dropdown.style.maxHeight = 0));
+  }
+});
+
+// Função para permitir seleção única de prêmios
+const awardToggles = document.querySelectorAll('.content__award-toggle');
+awardToggles.forEach(toggle => {
+  toggle.addEventListener('click', function() {
+    const clickedCheckbox = this;
+    const allCheckboxes = document.querySelectorAll('.content__award-toggle');
+
+    allCheckboxes.forEach(checkbox => {
+      if (checkbox !== clickedCheckbox) {
+        checkbox.checked = false;
+      }
+    });
+
+    const clickedDropdown = this.nextElementSibling;
+    if (clickedCheckbox.checked) {
+      clickedDropdown.style.maxHeight = '25rem'; // Ou a altura desejada
+    } else {
+      clickedDropdown.style.maxHeight = 0;
+    }
+  });
+});
+
+  

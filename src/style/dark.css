@@ -4,11 +4,11 @@ Esquema de cores
 de alto contraste
 para ativação do js .high-contrast-theme */
 .high-contrast-theme {
-    --background-color: #000;
-    --text-color: #fff; 
-    --link-color--active: #ffc107;
-        --link-hover--color: #ffc107;
-        --border-color: #ffc107;
+    --background-color: #fff;
+    --text-color: #000; 
+    --link-color--active: #2E3150;
+        --link-hover--color: #2E3150;
+        --border-color: #2E3150;
         
         background-color: var(--background-color);
     color: var(--text-color);
@@ -40,4 +40,23 @@ para ativação do js .high-contrast-theme */
 .high-contrast-theme a:focus {
     border-bottom: 2px solid var(--link-hover--color);
     color: var(--link-hover--color);
+}
+
+.high-contrast-theme .banner__navigation {
+    border-bottom: 2px solid;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 10;
+    border-image-source: linear-gradient(#3ba1cd, #1572b7);
+}
+
+
+.high-contrast-theme .banner,
+.high-contrast-theme .banner abbr,
+.high-contrast-theme .banner p,
+.high-contrast-theme .banner__title,
+.high-contrast-theme .banner__text,
+.high-contrast-theme .banner__text .banner__link{
+    color: #fff; 
+    background-color: transparent;
 }
