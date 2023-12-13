@@ -224,10 +224,12 @@
         display: flex;
         flex-direction: column;
         margin: 1rem 0;
+    }
 
-        font-size: 0.825rem;
-        font-style: italic;
-        line-height: 0;
+    .content__description--center {
+        text-align: center;
+        line-height: 1;
+        white-space: normal;
     }
         
 
