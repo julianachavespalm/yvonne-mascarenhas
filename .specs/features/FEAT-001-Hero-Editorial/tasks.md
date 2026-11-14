@@ -76,8 +76,8 @@ T1 -> T2
 
 ## Verificações (Checks)
 
-**C1** - Hero Editorial separa .hero-visual de .hero-content e contém h1 semântico, subtítulo, eyebrow e metadados
-Proof: run unit | ✔ FEAT-001: Hero Editorial separa .hero-visual de .hero-content e contém h1 semântico, subtítulo, eyebrow e metadados
+**C1** - Hero Editorial separa .hero-photo-wrapper de .hero-content e contém h1 semântico, subtítulo, eyebrow e metadados
+Proof: run unit | ✔ FEAT-001: Hero Editorial separa .hero-photo-wrapper de .hero-content e contém h1 semântico, subtítulo, eyebrow e metadados
 
 ---
 

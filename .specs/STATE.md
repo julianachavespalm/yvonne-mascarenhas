@@ -19,7 +19,7 @@
 - **Status**: Active
 
 ### AD-003
-- **Decisão**: Desacoplar o bloco tipográfico (`.hero-content`) do container da fotografia (`.hero-photo-wrapper` / `.hero-visual`) no Hero Editorial, mantendo a fotografia visível com borda branca no modo `high-contrast` (`ADR-003-hero-editorial.md`).
+- **Decisão**: Desacoplar o bloco tipográfico (`.hero-content`) do container da fotografia (`.hero-photo-wrapper`) no Hero Editorial, mantendo a fotografia visível com borda branca no modo `high-contrast` (`ADR-003-hero-editorial.md`).
 - **Motivo**: Garantir que o retrato da Dra. Yvonne Mascarenhas e os diagramas cristalográficos jamais sejam encobertos pelo título principal em qualquer resolução e preservar a imagem no modo de Alto Contraste já que não há texto sobreposto.
 - **Trade-off**: Layout em 2 colunas no topo desktop (`.hero-intro-grid`) alinhando Hero e Introdução.
 - **Escopo**: `index.html`, `src/css/layout.css`, `FEAT-001`, `FEAT-004`.
@@ -52,19 +52,21 @@
 
 ---
 
-## Mapeamento de Features e Arquivos
+## Auditoria de Cobertura por Feature (Matriz de Rastreabilidade)
 
-| Feature ID | Nome | Status | Arquivos de Implementação | Arquivos de Teste |
-| :--- | :--- | :--- | :--- | :--- |
-| `FEAT-001` | Hero Editorial | Concluído (`Verificado`) | `index.html`, `src/css/layout.css`, `src/assets/yvonne.png` | `tests/accessibility-and-dom.test.js` |
-| `FEAT-002` | Navegação Semântica, Menu e Atalhos | Concluído (`Verificado`) | `index.html`, `src/css/components.css`, `src/js/navigation.js`, `src/js/main.js` | `tests/navigation.test.js`, `tests/accessibility-and-dom.test.js` |
-| `FEAT-003` | Redimensionamento Fluido & Escala de Fonte | Concluído (`Verificado`) | `src/css/base.css`, `src/js/font-scale.js`, `src/js/safe-storage.js` | `tests/font-scale.test.js` |
-| `FEAT-004` | Modo de Alto Contraste AAA | Concluído (`Verificado`) | `src/css/tokens.css`, `src/css/components.css`, `src/js/theme-contrast.js`, `src/js/safe-storage.js` | `tests/theme-contrast.test.js`, `tests/accessibility-and-dom.test.js` |
-| `FEAT-005` | Conteúdo Editorial Semântico | Concluído (`Verificado`) | `index.html`, `src/css/layout.css`, `src/css/components.css` | `tests/accessibility-and-dom.test.js` |
-| `FEAT-006` | Experiência de Vídeo Lazy-Loaded | Concluído (`Verificado`) | `index.html`, `src/css/components.css` | `tests/accessibility-and-dom.test.js` |
-| `FEAT-007` | Linha do Tempo de Prêmios | Concluído (`Verificado`) | `index.html`, `src/css/components.css` | `tests/accessibility-and-dom.test.js` |
-| `FEAT-008` | Integração Resiliente VLibras | Concluído (`Verificado`) | `index.html`, `src/js/main.js` | `tests/accessibility-and-dom.test.js` |
-| `FEAT-009` | Design System & Tokens WCAG | Concluído (`Verificado`) | `src/css/tokens.css`, `src/css/base.css`, `src/css/layout.css`, `src/css/components.css` | `tests/accessibility-and-dom.test.js` |
+Todas as 9 especificações formais estão 100% implementadas no código-fonte e cobertas por testes automatizados:
+
+| Feature | Escopo e Regras de Negócio | Implementação | Prova Automatizada | Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **FEAT-001**<br/>Hero Editorial | • `.hero-content` desacoplado de `.hero-photo-wrapper`<br/>• Retrato `src/assets/yvonne.png` sem texto sobre o rosto<br/>• Borda branca no modo Alto Contraste | `index.html`<br/>`src/css/layout.css` | `tests/accessibility-and-dom.test.js` | Verified |
+| **FEAT-002**<br/>Navegação & Atalhos | • Skip link `#conteudo` no início do `<body>`<br/>• Menu hambúrguer com `aria-expanded`<br/>• Atalhos globais `Alt+1` a `Alt+4` | `index.html`<br/>`src/js/navigation.js` | `tests/navigation.test.js`<br/>`tests/accessibility-and-dom.test.js` | Verified |
+| **FEAT-003**<br/>Escala de Fonte | • Limites de 80% a 150% com passo de 10%<br/>• Sanitização contra entradas corrompidas<br/>• Anúncio em `#a11y-announcer` (`aria-live`) | `src/js/font-scale.js`<br/>`src/js/safe-storage.js` | `tests/font-scale.test.js` | Verified |
+| **FEAT-004**<br/>Alto Contraste | • Alternância via `data-theme="high-contrast"`<br/>• Atualização de `aria-pressed`<br/>• Degradação silenciosa em `Map` na memória | `src/js/theme-contrast.js`<br/>`src/js/safe-storage.js` | `tests/theme-contrast.test.js` | Verified |
+| **FEAT-005**<br/>Conteúdo Editorial | • Seções semânticas com `aria-labelledby`<br/>• Destaque visual `.crimson-callout`<br/>• Links externos com `rel="noopener noreferrer"` | `index.html`<br/>`src/css/components.css` | `tests/accessibility-and-dom.test.js` | Verified |
+| **FEAT-006**<br/>Vídeos Responsivos | • Iframes com `loading="lazy"` e títulos WAI-ARIA<br/>• Container com `aspect-ratio: 16 / 9` nativo<br/>• Descrição semântica em `<figcaption>` | `index.html`<br/>`src/css/components.css` | `tests/accessibility-and-dom.test.js` | Verified |
+| **FEAT-007**<br/>Linha do Tempo | • 8 marcos cronológicos decrescentes (2021 a 1998)<br/>• Datas marcadas com `<time datetime="...">`<br/>• Marcadores visuais em CSS puro | `index.html`<br/>`src/css/components.css` | `tests/accessibility-and-dom.test.js` | Verified |
+| **FEAT-008**<br/>VLibras | • Marcação oficial do avatar no fim do `<body>`<br/>• Guarda defensiva `window.VLibras.Widget`<br/>• Isolamento contra falhas de rede | `index.html`<br/>`src/js/main.js` | `tests/accessibility-and-dom.test.js` | Verified |
+| **FEAT-009**<br/>Design System | • Razão de contraste W3C: Branco/Fundo > 19:1 (AAA)<br/>• Alto contraste: Amarelo/Preto > 19:1 (AAA)<br/>• Hover em alto contraste com fundo `#ffff00` e texto `#000000` | `src/css/tokens.css`<br/>`src/css/base.css` | `tests/accessibility-and-dom.test.js` | Verified |
 
 ---
 

@@ -42,8 +42,9 @@ function contrastRatio(hexA, hexB) {
   return (brightest + 0.05) / (darkest + 0.05);
 }
 
-test('FEAT-001: Hero Editorial separa .hero-visual de .hero-content e contém h1 semântico, subtítulo, eyebrow e metadados', () => {
+test('FEAT-001: Hero Editorial separa .hero-photo-wrapper de .hero-content e contém h1 semântico, subtítulo, eyebrow e metadados', () => {
   assert.match(indexHtml, /<section class="hero"[^>]*>[\s\S]*?<div class="hero-content">/);
+  assert.match(indexHtml, /<div class="hero-photo-wrapper">/);
   assert.match(indexHtml, /<div class="tags">[\s\S]*?<span>Ciência<\/span>[\s\S]*?<span>Educação<\/span>[\s\S]*?<span>Brasil<\/span>/);
   assert.match(indexHtml, /<h2>Dra\. Yvonne <span>Mascarenhas<\/span><\/h2>/);
   assert.match(indexHtml, /<p>Senhora dos Cristais<\/p>/);

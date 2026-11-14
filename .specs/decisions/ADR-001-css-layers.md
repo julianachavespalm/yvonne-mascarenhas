@@ -20,7 +20,7 @@ Como organizar a camada de apresentação para garantir isolamento de responsabi
 Dividimos `src/css/` em quatro camadas carregadas sequencialmente no `<head>`:
 1. `src/css/tokens.css`: Variáveis CSS (`:root` e `[data-theme="high-contrast"]`) sem gerar regras de renderização direta.
 2. `src/css/base.css`: Reset box-sizing, tipografia base fluida, estados globais de `:focus-visible`, `.skip-link` e `@media (prefers-reduced-motion: reduce)`.
-3. `src/css/layout.css`: Estruturas macro da página (`.hero`, `.hero-visual`, `.hero-content`, `.content-wrapper`, seções).
+3. `src/css/layout.css`: Estruturas macro da página (`.hero`, `.hero-photo-wrapper`, `.hero-content`, `.content-wrapper`, seções).
 4. `src/css/components.css`: Componentes coesos e reutilizáveis (`.header`, `.nav-links`, `.a11y-btn`, `.crimson-callout`, `.video-card`, `.timeline`).
 
 ## 4. Consequências e Verificação
