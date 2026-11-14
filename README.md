@@ -213,13 +213,8 @@ O projeto também mantém um pipeline de Continuous Integration / Continuous Del
 </table>
 
 ---
-
-## Autoria e Engenharia
-
-Projeto concebido, arquitetado e desenvolvido por:
+## Autoria
 
 **Juliana Chaves Palm**  
-*Software Engineer · Solution Design & Spec-Driven Development · Sistemas Escaláveis e Acessibilidade*  
+[GitHub](https://github.com) · [LinkedIn](https://linkedin.com)
 
-- GitHub: [https://github.com/julianachavespalm](https://github.com/julianachavespalm)  
-- LinkedIn: [https://linkedin.com/in/julianachavespalm](https://linkedin.com/in/julianachavespalm)  
