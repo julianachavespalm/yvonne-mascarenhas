@@ -1,0 +1,280 @@
+/* ==========================================================================
+   Camada 3: Layout — Wrapper, Hero+Intro Grid e Fluxo Principal (src/css/layout.css)
+   Estrutura:
+   - Topo: 2 colunas no desktop (Coluna 1: Foto + Título/Tags/Subtítulo; Coluna 2: Introdução)
+   - Restante do texto: Largura total correspondente às 2 colunas juntas.
+   ========================================================================== */
+
+/* CONTAINER PRINCIPAL */
+.wrapper {
+  max-width: 480px; /* Limite fluido mobile */
+  margin: 0 auto;
+  background-color: var(--bg);
+}
+
+/* GRID DO TOPO: FOTO + TÍTULO À ESQUERDA, INTRODUÇÃO À DIREITA */
+.hero-intro-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 20px 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Coluna 1: Título e Foto */
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.hero-photo-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #000000;
+  border: 1px solid #1a2233;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Manutenção da foto no modo de alto contraste (sem texto sobreposto) */
+[data-theme="high-contrast"] .hero-photo-wrapper {
+  display: block;
+  border: 2px solid #ffffff;
+}
+
+[data-theme="high-contrast"] .hero-photo {
+  display: block;
+}
+
+.hero h2 {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+[data-theme="high-contrast"] .hero h2 {
+  text-shadow: none;
+}
+
+.hero h2 span {
+  display: block;
+  color: var(--accent-red);
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 14px 0 10px;
+}
+
+.tags span::before {
+  content: "■ ";
+  color: var(--accent-red);
+  font-size: 0.65rem;
+  vertical-align: middle;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+[data-theme="high-contrast"] .hero p {
+  text-shadow: none;
+}
+
+/* BYLINE EDITORIAL CIENTÍFICA */
+.byline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+.byline strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.byline-sep {
+  color: var(--accent-red);
+  font-size: 0.65rem;
+}
+
+.byline time {
+  color: var(--text-muted);
+}
+
+[data-theme="high-contrast"] .byline {
+  color: #ffffff;
+}
+
+[data-theme="high-contrast"] .byline strong {
+  color: #ffff00;
+}
+
+[data-theme="high-contrast"] .byline-sep {
+  color: #ffff00;
+}
+
+[data-theme="high-contrast"] .byline time {
+  color: #ffffff;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+.section {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--accent-red);
+}
+
+.section h4 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+[data-theme="high-contrast"] .section p {
+  color: var(--text);
+}
+
+/* ==========================================================================
+   VERSÃO DESKTOP (Telas maiores que 768px)
+   - Topo: 2 colunas independentes (Foto+Título | Introdução)
+   - Restante do conteúdo: Ocupa a largura total das 2 colunas combinadas
+   ========================================================================== */
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 1140px;
+    padding: 0 40px;
+  }
+
+  /* Grid do topo: 2 colunas simétricas */
+  .hero-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+    padding: 36px 0 52px;
+  }
+
+  /* Coluna 1: Título e Foto */
+  .hero h2 {
+    font-size: clamp(3rem, 4.5vw, 4rem);
+    letter-spacing: 0.5px;
+    line-height: 1.0;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .tags {
+    font-size: 0.85rem;
+    margin: 14px 0 10px;
+  }
+
+  .byline {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  /* Coluna 2: Introdução alinhada com o topo do título */
+  .section-intro {
+    padding: 0;
+  }
+
+  .section-intro h3 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    line-height: 1.0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .section-intro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  /* Restante do texto: ocupa a largura exata dessas 2 colunas juntas */
+  .main-content-flow {
+    width: 100%;
+  }
+
+  .main-content-flow .section {
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 0;
+    column-count: 1; /* Largura total sem dividir */
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .main-content-flow .section:last-of-type {
+    border-bottom: none;
+  }
+
+  .main-content-flow .section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+
+  .main-content-flow .section h4 {
+    font-size: 1rem;
+  }
+
+  .main-content-flow .section p {
+    font-size: 1.125rem;
+    line-height: 1.85;
+    margin-bottom: 22px;
+  }
+}

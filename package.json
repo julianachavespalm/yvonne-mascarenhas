@@ -1,0 +1,29 @@
+{
+  "name": "yvonne-mascarenhas",
+  "version": "2.0.0",
+  "description": "Homenagem Editorial e Científica à Dra. Yvonne Primerano Mascarenhas — SDD, Arquitetura Modular Enxuta, TDD e WCAG 2.2 AA/AAA",
+  "type": "module",
+  "main": "src/js/main.js",
+  "scripts": {
+    "test": "node --test",
+    "validate:specs": "node scripts/validate-sdd.mjs",
+    "verify": "node scripts/validate-sdd.mjs && node --test"
+  },
+  "keywords": [
+    "yvonne-mascarenhas",
+    "cristalografia",
+    "spec-driven-development",
+    "sdd",
+    "lean-architecture",
+    "modular-architecture",
+    "tdd",
+    "wcag-2-2",
+    "accessibility",
+    "vlibras"
+  ],
+  "author": "Juliana Chaves Palm",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

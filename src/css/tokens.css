@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Camada 1: Design Tokens (src/css/tokens.css)
+   ========================================================================== */
+
+:root {
+  --bg: #0b0e14;
+  --text: #ffffff;
+  --text-muted: #9ba1a6;
+  --accent-red: #e63946;
+  --accent-blue: #4a90e2;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --border-timeline: #2a3446;
+  --user-font-scale: 1;
+
+  /* Superfície e anel de foco */
+  --surface: #131823;
+  --border-color: #2a3446;
+  --focus-ring: #e63946;
+}
+
+/* TEMA DE ALTO CONTRASTE */
+[data-theme="high-contrast"] {
+  --bg: #000000;
+  --text: #ffffff;
+  --text-muted: #ffffff;
+  --accent-red: #ffff00; /* Amarelo */
+  --accent-blue: #00ffff; /* Ciano */
+  --border-timeline: #ffffff;
+  --surface: #000000;
+  --border-color: #ffffff;
+  --focus-ring: #ffff00;
+}
